@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--pale-blue);
+  background: var(--pale-blue) url('./images/pattern-background-desktop.svg') top no-repeat;
 }
 
 main {
