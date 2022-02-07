@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: 500 1rem 'Red Hat Display', sans-serif;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --box-shadow-clr: hsl(224, 20%, 80%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(255, 100%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--pale-blue);
+}
+
+main {
+  width: min(87%, 20.39rem);
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+p {
+  color: var(--desaturated-blue);
+}
+
+span, a{
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.8rem 0 1rem 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+button {
+  width: 100%; 
+  background: var(--bright-blue);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  padding: 1em;
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+
+.header img{
+  width: 100%;
+  border-radius: 1rem 1rem 0 0; 
+}
+
+.content {
+  padding: 1.2rem 1.2rem 1rem 1.2rem;
+}
+
+.container {
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  background: var(--very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.plan {
+  margin-right: 1.5rem;
+}
+
+.cancel-btn {
+  background: none;
+  color: var(--desaturated-blue);
+  margin-top: 1rem;
+}
+
+.payment-btn {
+  box-shadow: 0px 25px 20px var(--pale-blue);
+}
+
+.payment-btn:hover {
+  box-shadow: 0px 25px 20px var(--box-shadow-clr);
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  cursor: pointer;
+  color: var(--bright-blue);
+}
+
+.change-link {
+  transition: all 500ms ease;
+}
+
+.change-link:hover {
+  cursor: pointer;
+  color: var(--white);
+  text-decoration: none;
+  background: var(--bright-blue);
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+
+.attribution { 
+  font-size: 0.8rem; 
+  text-align: center;
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%); 
+}
